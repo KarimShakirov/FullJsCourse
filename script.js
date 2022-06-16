@@ -1,25 +1,11 @@
-console.log('arr' + ' - object');
-console.log('arr' + 'Karim');
-console.log(4 + +'5')
+function dontGiveMeFive(start, end) {
+    let arr = [];
+
+    for (let i = start; i <= end; i++) {
+        if (i.toString().includes('5') === false) arr.push(i)
+    }
+    return arr.length;
+}
 
 
-let incr = 10;
-let decr = 10;
-
-incr++;
-decr--;
-
-console.log(incr)
-console.log(decr)
-console.log(++incr)
-
-
-
-
-
-
-
-
-
-
-
+console.log(dontGiveMeFive(1,40))
